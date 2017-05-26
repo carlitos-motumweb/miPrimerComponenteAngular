@@ -1,3 +1,51 @@
 <h1>
-  {{title}}
+  {{tituloPrincipal}}
 </h1>
+<div class="col-xs-12 col-md-9 listado-productos">
+  <div class="card-deck">
+    <div class="card ">
+      <!-- <img class="card-img-top img-fluid" src="bandera00.png" alt="Card image cap"> -->
+      <div class="card-block">
+          <input type="text" [(ngModel)]="tituloCard00"/>
+        <h4 class="card-title">{{tituloCard00}}</h4>
+        <p class="card-text">{{descripcionCard00}}</p>
+        <button type="submit" class="btn btn-primary form-text" (click)="actionBoton00()">{{textoBotonCar00}}</button>
+      </div>
+    </div>
+    <div class="card">
+      <!-- <img class="card-img-top" src="img/bandera00.png" alt="Card image cap"> -->
+      <div class="card-block">
+          <input type="text" [(ngModel)]="tituloCard01"/>
+          <h4 class="card-title">{{tituloCard01}}</h4>
+          <p class="card-text">{{descripcionCard01}}</p>
+          <button type="submit" class="btn btn-primary form-text" (click)="actionBoton01()" >{{textoBotonCar01}}</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div id="paginator-container" class="col-xs text-xs-center">
+      <nav>
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a href="#" class="page-link">&laquo;</a>
+          </li>
+          <li class="page-item active">
+            <a href="#" class="page-link ">1</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">2</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">4</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">&raquo;</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

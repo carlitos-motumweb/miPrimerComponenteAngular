@@ -1,0 +1,20 @@
+h1{
+    color: blue;
+}
+#productos-container .list-group-item-action.active{
+    background-color: #99c84a;
+    border-color: #99c84a;
+}
+
+#productos-container .list-group+.list-group{
+    margin-top: 1em;
+}
+
+#paginator-container .page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover{
+    background-color: #99c84a;
+    border-color: #99c84a;
+}
+
+#paginator-container .page-item:not(.active):not(.disabled) .page-link{
+    color: #99c84a;
+}
