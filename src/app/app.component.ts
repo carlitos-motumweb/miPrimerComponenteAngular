@@ -15,11 +15,9 @@ export class AppComponent {
   textoBotonCar01 = 'Boton01';
 
   actionBoton00(): void {
-    console.log("se ha presionado el boton00");
     this.tituloCard00 = this.tituloCard00.toUpperCase();
   }
   actionBoton01(): void {
-    console.log("se ha presionado el boton01");
     this.tituloCard01 = this.tituloCard01.toUpperCase();
   }
 
