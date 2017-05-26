@@ -1,6 +1,10 @@
 h1{
     color: blue;
 }
+.card {
+    padding: 1em;
+    margin: 1em;
+}
 #productos-container .list-group-item-action.active{
     background-color: #99c84a;
     border-color: #99c84a;

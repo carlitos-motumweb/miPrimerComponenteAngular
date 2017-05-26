@@ -6,19 +6,32 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  tituloPrincipal = 'Primer proyecto de prueba con Angular2!';
-  tituloCard00 = 'Tarjeta 00';
-  descripcionCard00 = 'Descripción 00';
-  textoBotonCar00 = 'Boton00';
-  tituloCard01 = 'Tarjeta 01';
-  descripcionCard01 = 'Descripción 01';
-  textoBotonCar01 = 'Boton01';
-
+  tituloPrincipal = 'Unidades registradas';
+  textoBoton = "cambiar";
+  titulos = [
+      {
+        unitno:'Unidad 00',
+        flota: 'hesatecnica',
+        odometro: '123.45'
+      },
+      {
+          unitno:'Unidad 01',
+          flota: 'edh',
+          odometro: '123.45'
+      },
+      {
+          unitno:'Unidad 02',
+          flota: 'tekdiesel',
+          odometro: '123.45'
+      },
+      {
+          unitno:'Unidad 03',
+          flota: 'tekcerveza',
+          odometro: '123.45'
+      }
+  ];
   actionBoton00(): void {
-    this.tituloCard00 = this.tituloCard00.toUpperCase();
-  }
-  actionBoton01(): void {
-    this.tituloCard01 = this.tituloCard01.toUpperCase();
+    console.log('Se ha presionado el botón');
   }
 
 
