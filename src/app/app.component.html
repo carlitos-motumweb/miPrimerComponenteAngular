@@ -1,42 +1,27 @@
 <h1>{{tituloPrincipal}}</h1>
-<div class="col-xs-12 col-md-9 listado-productos">
+<div class="col-xs-12 listado-productos">
   <div class="card-deck">
     <div *ngFor="let tituloTEMP of titulos">
-        <div class="card ">
-          <!-- <img class="card-img-top img-fluid" src="bandera00.png" alt="Card image cap"> -->
-          <div class="card-block">
-            <h4 class="card-title text-xs-center"><input-tituloCard titulo="{{tituloTEMP.unitno}}"></input-tituloCard></h4>
-            <p class="card-text">Flota: <input-tituloCard titulo="{{tituloTEMP.flota}}"></input-tituloCard></p>
-            <p class="card-text">Odometro: <input-tituloCard titulo="{{tituloTEMP.odometro}}"></input-tituloCard></p>
-            <button type="submit" class="btn btn-primary form-text" (click)="actionBoton00()">{{textoBoton}}</button>
+      <div class="card ">
+        <div class="card-header card-primary">
+          <input-tituloCard clave="{{tituloTEMP.unitno}}" titulo="{{tituloTEMP.unitno}}"></input-tituloCard>
+        </div>
+        <div class="card-block">
+          <p class="card-text">Flota:
+            <input-tituloCard clave="{{tituloTEMP.unitno}}" titulo="{{tituloTEMP.flota}}"></input-tituloCard>
+          </p>
+          <p class="card-text">Odometro:
+            <input-tituloCard clave="{{tituloTEMP.unitno}}" titulo="{{tituloTEMP.odometro}}"></input-tituloCard>
+          </p>
+        </div>
+        <div class="card-footer text-right">
+          <div class="btn btn-primary">
+            <input-tituloCard clave="{{tituloTEMP.unitno}}" titulo="{{tituloTEMP.textoBoton}}" (botonPresionado00)="botonPresionado($event)"></input-tituloCard>
           </div>
         </div>
-    </div>
-  </div>
-  <div class="row">
-    <div id="paginator-container" class="col-xs text-xs-center">
-      <nav>
-        <ul class="pagination">
-          <li class="page-item disabled">
-            <a href="#" class="page-link">&laquo;</a>
-          </li>
-          <li class="page-item active">
-            <a href="#" class="page-link ">1</a>
-          </li>
-          <li class="page-item">
-            <a href="#" class="page-link">2</a>
-          </li>
-          <li class="page-item">
-            <a href="#" class="page-link">3</a>
-          </li>
-          <li class="page-item">
-            <a href="#" class="page-link">4</a>
-          </li>
-          <li class="page-item">
-            <a href="#" class="page-link">&raquo;</a>
-          </li>
-        </ul>
-      </nav>
+      </div>
     </div>
   </div>
 </div>
+<hr/>
+<h6 class="text-muted" >{{respuesta}}</h6>

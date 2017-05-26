@@ -1,4 +1,4 @@
-import{Component, Input} from '@angular/core';
+import{Component, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
     selector:'input-tituloCard',
@@ -7,9 +7,16 @@ import{Component, Input} from '@angular/core';
 })
 
 export class TituloComponent{
+    @Input() clave:string;
     @Input() titulo:string;
+    @Output() botonPresionado00 = new EventEmitter<string>();
 
     constructor(){
         console.log('Creando component input');
+    }
+
+    votar():void{
+        console.log('votar() - ['+this.clave+' - '+this.titulo+']');
+        this.botonPresionado00.emit(this.clave);
     }
 }
