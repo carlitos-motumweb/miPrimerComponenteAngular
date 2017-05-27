@@ -13,25 +13,25 @@ export class AppComponent {
       unitno: 'Unidad 00',
       flota: 'hesatecnica',
       odometro: '123.45',
-      textoBoton : 'Consultar'
+      textoBoton : 'fa fa-car'
     },
     {
       unitno: 'Unidad 01',
       flota: 'edh',
       odometro: '123.45',
-      textoBoton : 'Consultar'
+      textoBoton : 'fa fa-car'
     },
     {
       unitno: 'Unidad 02',
       flota: 'tekdiesel',
       odometro: '123.45',
-      textoBoton : 'Consultar'
+      textoBoton : 'fa fa-car'
     },
     {
       unitno: 'Unidad 03',
       flota: 'tekcerveza',
       odometro: '123.45',
-      textoBoton : 'Consultar'
+      textoBoton : 'fa fa-car'
     }
   ];
 
