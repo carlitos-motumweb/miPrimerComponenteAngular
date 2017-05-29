@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { TituloComponent } from './input/input.component';
+import {MultiplicadorPipe} from './pipes/multiplicador.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TituloComponent
+    TituloComponent,
+    MultiplicadorPipe
   ],
   imports: [
     BrowserModule,

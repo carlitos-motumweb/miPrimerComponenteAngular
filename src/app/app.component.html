@@ -11,7 +11,10 @@
             <input-tituloCard clave="{{tituloTEMP.unitno}}" titulo="{{tituloTEMP.flota}}"></input-tituloCard>
           </p>
           <p class="card-text">Odometro:
-            <input-tituloCard clave="{{tituloTEMP.unitno}}" titulo="{{tituloTEMP.odometro}}"></input-tituloCard>
+            <input-tituloCard clave="{{tituloTEMP.unitno}}" titulo="{{tituloTEMP.odometro | multiplicador:2}}"></input-tituloCard>
+          </p>
+          <p class="card-text">Posición actual:
+            <input-tituloCard clave="{{tituloTEMP.unitno}}" titulo="{{tituloTEMP.posicionActual | date:'fullDate' | uppercase}}"></input-tituloCard>
           </p>
         </div>
         <div class="card-footer text-right">
