@@ -27,3 +27,19 @@ h1{
 #paginator-container .page-item:not(.active):not(.disabled) .page-link{
     color: #99c84a;
 }
+
+/*button {
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    width: 70px;
+    height: 60px;
+}*/
+.si{
+    background-color: #6c5;
+}
+.no{
+    background-color: #933;
+}

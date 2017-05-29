@@ -1,4 +1,4 @@
-<h1>{{tituloPrincipal}}</h1>
+<h1 tituloEnorme fondoEspecial>{{tituloPrincipal}}</h1>
 <div class="col-xs-12 listado-productos">
   <div class="card-deck">
     <div *ngFor="let tituloTEMP of titulos">
@@ -29,3 +29,15 @@
 </div>
 <hr/>
 <h6 class="text-muted" >{{respuesta}}</h6>
+<p>
+  <button
+    [ngClass]="{si: estadoPositivo, no: !estadoPositivo,btn:true}"
+    (click)="cambiaEstado()"
+  >{{texto}}</button>
+</p>
+<hr/>
+<ul>
+    <li *ngFor='let ticketTEMP of todosTickets'>
+        <b>Ticket id: {{ticketTEMP.id}}</b> -- {{ticketTEMP.titulo}}
+    </li>
+</ul>
